@@ -2,10 +2,10 @@
 public abstract class Element {
 	int x,y;
 	private int life;
-	public Element(int x, int y, int vida) {
+	public Element(int x, int y, int life) {
 		this.x=x;
 		this.y=y;
-		this.life=vida;
+		this.life=life;
 	}
 	
 	abstract int GetWidth();
