@@ -20,8 +20,8 @@ abstract public class Ship extends Element{
 	static int none_right = Window.WIDTH+333; // value returned by RightShip in case there is None to the right
 	static int none_left = -33; // value returned by LeftShip in case there is None to the left
 	
-	public Ship(int x, int y, int vida, int points) {
-		super(x,y,vida);
+	public Ship(int x, int y, int life, int points) {
+		super(x,y,life);
 		this.points=points;
 	}
 	
@@ -91,8 +91,6 @@ abstract public class Ship extends Element{
 			}
 		}
 	}
-	
-	// TODO: implement the bullets' child classes
 	
 	void shoot(ArrayList<Bullet> b) {
 		int random_int=(int)(Math.random()*(PROBABILITY+1));
