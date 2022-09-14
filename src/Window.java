@@ -105,7 +105,7 @@ public class Window extends Frame implements KeyListener{
 	public boolean isRightPressed() {
 		return RIGHT_isPressed;
 	}
-	
+
 	public void keyPressed(KeyEvent e) {
 		if (e.getKeyCode()==KeyEvent.VK_RIGHT) // right arrow
 			RIGHT_isPressed=true;
@@ -118,6 +118,8 @@ public class Window extends Frame implements KeyListener{
 			RIGHT_isPressed=false;
 		else if (e.getKeyCode()==KeyEvent.VK_LEFT) // left arrow
 			LEFT_isPressed=false;
+		else if (e.getKeyCode()==KeyEvent.VK_UP || e.getKeyCode()==KeyEvent.VK_SPACE) // up arrow or SPACE
+			j.player.shoot(j.b_player);
 		else if (e.getKeyCode()==KeyEvent.VK_ENTER)
 			ENTER_isPressed=true;
 		else if (e.getKeyCode()==KeyEvent.VK_ESCAPE)
