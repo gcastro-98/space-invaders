@@ -30,12 +30,10 @@ public class Player extends Element{
 		else
 			x=0;
 	}
-	
-	// TODO: implement the bullet childs' class
 
 	void shoot(ArrayList<Bullet> b) {
 		if(b.size()<=N_MAX_SHOOTS) {
-			b.add(new BalaNormal(this.x+width/2,this.y,-Bullet.VEL_BULLET));
+			b.add(new NormalBullet(this.x+width/2,this.y,-Bullet.VEL_BULLET));
 			Game.reproduceSound("shoot", 0);
 			}
 	}
