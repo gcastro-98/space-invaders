@@ -22,3 +22,7 @@ I will document the project using Javadoc (Ubuntu 22.04: ``libloader-java-doc``)
 ```console
 user@device:~/space-invaders/src$ javadoc *.java -d ../doc
 ```
+
+### HAVE FUN!
+
+![plot](./screenshot.png)
